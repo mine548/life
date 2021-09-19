@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+	<!--自适应屏幕-->
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>template</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+	<link rel="stylesheet" type="text/css" href="../css/tpl.css">
+</head>
+
+<body>
+<table width="1000" border="0" align="center">
+  <tbody>
+    <tr>
+      <td><table width="100%" border="0">
+        <tbody>
+          <!-- TemplateBeginEditable name="sessionEdit" -->
+          <tr align="left" valign="top">
+            <td height="0">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp; </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <!-- TemplateEndEditable -->
+          <tr>
+            <td id="html_last">个人网站创作不易，请多多支持</td>
+          </tr>
+          <tr>
+            <td style="text-align: center" >
+				<div id="qwe123" style="color:#11A5DF; font-size: 18px;font-weight: bold;text-decoration:3px underline;text-decoration-color:#2F40B9;opacity: 0.7;">
+			
+			  <script type="text/javascript">
+		var x=0;
+		
+		if(localStorage.pagecount){
+			localStorage.pagecount=Number(localStorage.pagecount)+1;
+			
+		}else{
+			localStorage.pagecount=1;   //网页第一次被打开时的访问次数
+		}
+		x=localStorage.pagecount;
+		//document.write("鄙人网站共来访"+x+"人.");
+		var qwe=document.getElementById('qwe123');
+		qwe.innerHTML="本网站共计来访"+x+"次";
+				  
+				  	//实现最简单的点击事件 onClick!
+		function prompt_pwd(){
+			alert("为什么打开呢！？这可是管理员专用选项");
+			var  pwd=prompt("请输入管理员密码:","");
+			if(pwd=="root"){
+				window.localStorage.clear(x);
+				alert("您已成功清楚当前访问数据！");
+			}else{
+				alert("密码错误或者为空，因好奇心作祟就麻烦您回首页了。");
+			window.location.href="../HTML/first.html";
+			}
+			
+		}
+				</script>
+					
+				<button class="btn_last" onClick="prompt_pwd()" >每日访问量更新</button>
+				</div>
+			  </td>
+          </tr>
+          <tr>
+            <td style="text-align: center">CopyRight&copy;believe_withdral_evil_To acquire_realheart</td>
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+  </tbody>
+</table>
+
+	<script type="text/javascript">
+	
+	</script>
+	
+<br>
+<div style="text-align: center;color:red;text-shadow: 2px;2px;2px;#2048D6;font-size: 18px;opacity: 0.8;font-weight: bold;" id="access_people"></div>
+	
+
+	
+	
+</body>
+</html>

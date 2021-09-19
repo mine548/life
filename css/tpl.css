@@ -1,0 +1,36 @@
+.btn_last{
+	align:left;
+	border:transparent;
+	font-weight: bold;
+	color: #062CEA;
+	text-align: center;
+}
+
+.btn_last:active{
+	/*表示交互后的样式*/
+	align:left;
+	text-align: center;
+	border:transparent;
+	background: transparent;
+	color: red; 
+	transform: scale(0.8);
+	opacity: 0.8;
+}
+
+#html_last{
+	text-align: center;
+	text-shadow: 3px 3px 3px #FFFF00;
+	color:blue;
+	font-size: 18px;
+	font-style: italic;
+}
+
+
+
+.dbtn{
+		align:left;
+	border:transparent;
+	font-weight: bold;
+	color: #062CEA;
+	text-align: center;
+}

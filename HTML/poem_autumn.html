@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>如诗如画！</title>
+    <style>
+        img {
+            /* 绝对定位，脱离文档流 */
+            position: absolute;
+           bottom:3px;
+			
+			opacity: 0.3	
+        }
+		
+		body{
+			/*背景图自动适应屏幕！*/
+			background: url("../images/bg_poem .jpg");
+			background-repeat: no-repeat;/*no repeat表示只有一张图 在当前屏幕有限空间内*/
+			background-size: 100% 100%;
+			background-attachment: fixed;
+			
+		}
+   
+    </style>
+
+</head>
+
+<body>
+	
+    <img src="../images/angel.jpg" alt="images_mouse!">
+    <script>
+        var pic = document.querySelector('img');
+        document.addEventListener('mousemove', function(e) {
+            // 1. mousemove只要我们鼠标移动1px 就会触发这个事件
+            // console.log(1);
+            // 2.核心原理： 每次鼠标移动，我们都会获得最新的鼠标坐标， 把这个x和y坐标做为图片的top和left 值就可以移动图片
+            var x = e.pageX;
+            var y = e.pageY;
+            console.log('x坐标是' + x, 'y坐标是' + y);
+            //3 . 千万不要忘记给left 和top 添加px 单位
+            //50是图片宽度的一半
+            //40是图片高度的一半
+            //-50和-40是为了使鼠标显示在图片的中间位置
+            pic.style.left = x - 50 + 'px';
+            pic.style.top = y - 40 + 'px';
+        });
+    </script>
+	
+	<div align="center">
+		<div style="display: flex;flex-direction: column;">
+		<span style="font-size: 25px; color:aqua;text-shadow: 3px 3px 3px blue;">明明都是一个地，却又是不同一个理。</span>
+		<span style="font-size: 25px; font-weight: bold;">好月留心，异步何求。</span>
+		<marquee onMouseOver="this.stop()" onMouseOut="this.start()" bgcolor="#24CBDA" behavior="scroll" direction="left"><span style="color:#A14CD9;font-size: 20px;">明月怀远辉,消桂一杯酒.</span></marquee>
+			<span><strong>这世界我和你明明很近,一日不分区别,一月已是天差地别.</strong></span>
+			
+	  </div>
+</div>
+	<br>
+	
+	<div>
+	  <h1 align="center">兮兮月稀,萧条叶影.</h1>
+</div>	
+		
+		<div align="center">
+			<video id="video_1" src="../audio/autumn_video.mp4" controls="true" controlslist="nodownload"  width="600" height="300"  autoplay="autoplay"></video>
+			</div>
+		<br>
+	<div align="left">
+		<span style="color:black;text-size=30px;font-weight: bold;text-shadow: 2px 2px 2px white;word-break: break-all;">我以微信发送"g.wazf.top/327"愿你我人人中秋幸福美满，合家欢乐！我愿长存为你我的光，如玉镜长眠心灵.</span>
+	<p style="color: white;font-style: italic;font-size: 20px;text-shadow: 2px 2px 2px black;">
+		愿孤独的灵魂充满喜悦，在旅途中收获山川湖海，月洒前程，
+		愿温柔的爱情不被辜负，在屋檐下共享三餐四季，美满如初。
+		</p>
+		<p style="color: white;font-style: italic;font-size: 20px;text-shadow: 2px 2px 2px black;">
+			仲月夜，蟾宫折桂枝，软玉温雪诉衷肠，
+			瀚海天，月是故乡明，暖风酥雨映星空。
+		</p>
+	
+		<p style="background:#54CCDE;word-break: break-all;">说故事的人与读故事的人，捧着一个城市哭泣,期待一场人生迎辉。直到彻底远离了纷扰,也没明白当初跑东跑西到底是为何,或甜或苦的际遇，该讲又不得诉，即是该诉不得讲。慢慢撑起一方天地，慢慢归于一方尘土。<small>演绎故事不重要,</small><strong>重要的是那个说故事的人</strong>。圆月又是一轮，虚岁又是一年，明日复明日，归途何处去。<del>现今，汝心于此</del>好好品一品月饼，观一回圆月。那时，突然发现万物是如此的美好，眼前的事物居然全变了样，无限的美好至尽于此。终于，好好感受了当下的时光，真正做回了自己.</p>
+			
+		
+	</div>
+	
+	
+			<p style="text-align: center">CopyRight&copy;believe_withdral_evil_To acquire_realheart</p>
+
+			
+	
+	
+		
+	
+	
+	
+	
+</body>
+
+</html>
